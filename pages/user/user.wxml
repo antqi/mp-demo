@@ -1,0 +1,8 @@
+<view>
+  <block>
+    <text>Hi {{base.name}}</text>
+  </block>
+  <block>
+    <text>{{base.now}}</text>
+  </block>
+</view>
