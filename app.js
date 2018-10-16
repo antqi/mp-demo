@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log('onlaunch')
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,7 +34,20 @@ App({
       }
     })
   },
+  onShow(options){
+    console.log('onshow')
+    console.log(options)
+  },
+  onHide(){
+    console.log('onhide')
+  },
+  onUnlaunch(){
+    console.log('onunlaunch')
+  },
   globalData: {
     userInfo: null
   }
 })
+
+// 全局函数
+console.log(getApp())

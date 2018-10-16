@@ -3,11 +3,13 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "debug":true,
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#f60",
     "navigationBarTitleText": "first-demo",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"light",
+    "enablePullDownRefresh":true
   },
   "tabBar":{
     "color":"#bfbfbf",
