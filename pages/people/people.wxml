@@ -1,0 +1,6 @@
+<view class='user-container'>
+    <view class="user" wx:for="{{userList}}">
+      <text class="name">{{index+1>9?index+1:'0'+(index+1)}}  {{item.realName}}</text>
+      <text class="phone">{{item.phone}}</text>
+    </view>
+</view>

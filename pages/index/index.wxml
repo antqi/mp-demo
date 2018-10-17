@@ -1,14 +1,6 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <text class="user-desc">{{desc}}</text>
-  </view>
+<view class="index-container">
+ <text>svg</text>
+    <!--<text class="svg"></text> -->
+    <web-view src="http://xjz.h5.fkls.com/studentapp-answer/topiclist?os=Android&osVersion=21&deviceBrand=NX510J&appVersion=3.1.1&ip=10.0.2.90&deviceId=f963f1d38058927f&platform=2&appType=5&timestamp=1539762342807&userId=138797311537995777&token=1b4f9d8133b26f8410b78b95ccd3557akpQ8Fr1lEj&sign=12087da4f46516edf699eb05d9fc7901&seqId=83488&workId=20180910a2348ff082a146e184c2fc83c22026f6&workType=1&topicId=null&analysis=0&isLessonTopic=0"></web-view>
 </view>

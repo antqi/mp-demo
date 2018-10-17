@@ -1,0 +1,30 @@
+/* pages/user/user.wxss */
+.user-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items:initial;
+  margin: 0;
+}
+
+
+.user{
+  display: flex;
+  border-bottom: solid .5rpx rgb(241, 241, 241);
+  margin: 10rpx 20rpx;
+  padding:0 0 15rpx 0;  
+  color: #f60;
+}
+
+.user:last-child{
+  border:none;
+}
+
+.name{
+  flex:3;
+}
+
+.phone{
+  flex:4;
+}
+

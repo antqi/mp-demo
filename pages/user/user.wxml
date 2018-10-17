@@ -1,6 +1,14 @@
-<view class='user-container'>
-    <view class="user" wx:for="{{userList}}">
-      <text class="name">{{index+1>9?index+1:'0'+(index+1)}}: {{item.realName}}</text>
-      <text class="phone">{{item.phone}}</text>
-    </view>
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <text class="user-desc">{{desc}}</text>
+  </view>
 </view>
