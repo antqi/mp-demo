@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/user/user",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/user/user"
+    "pages/logs/logs"
   ],
   "debug":true,
   "window":{
@@ -18,10 +18,10 @@
     "borderStyle": "white",
     "list":[
       {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"images/home.png",
-        "selectedIconPath":"images/home_active.png"
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_active.png"
       },
       {
         "pagePath":"pages/logs/logs",
@@ -30,11 +30,12 @@
         "selectedIconPath":"images/file_active.png"
       },
       {
-        "pagePath":"pages/user/user",
-        "text":"我的",
-        "iconPath":"images/user.png",
-        "selectedIconPath":"images/user_active.png"
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home_active.png"
       }
+      
     ]
   }
 }
